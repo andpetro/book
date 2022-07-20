@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Book & Test</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+    <div id="fullpage">
+        
+        <a href="https://yam-united.telekom.com/pages/technik-deutschland/apps/content/home"><img src="T-Shirt-Druckvorlage_2021_final.png"; 
+        style="width: 75px; height: 75px; margin-left: auto; margin-right: auto; display: block; background-color: rgb(164, 164, 164)"></a>
+        <h1 style="color:rgb(226, 0, 116); font-family: 'TeleGrotesk Next'; text-align: center;">Book and Test</h1>
+        <br>
+        <table class="table">
+            <tr>
+                <td class="data_class2">🏷️ Name of the Booking:</td>
+                <td class="input"><input class="input "name="name" id="name" type="text" placeholder="Booking" required onblur="checkname();"></td>
+                <td class="feedback"><span id="messagename">No more letters</span></td>
+            </tr>
+
+            <tr><td><br></td></tr>    
+                 
+            
+            <tr>            
+                <td class="data_class2" colspan="3">⚙️ Product Configurator:</td>
+            </tr>
+
+            <!--<tr><td><br></td></tr>-->
+
+            <tr>
+                <td class="data_class">Environment:</td>
+                <td class = "input">
+                <select class="input" name="env" id="env"> 
+                    <option value="Abnahmeverbund (AV)" selected>AV</option>
+                    <option value="Funktionalen Referenzverbund (FRV)">FRV</option>
+                </select>
+                </td>
+                <td class="feedback"></td>
+            </tr>
+                      
+            <tr>
+                <td class="data_class">Product Type:</td>
+                <td class = "input">
+                <select class="input" name="product" id="product"> 
+                    <option value="Deutschland LAN Connect IP (DCIP)" selected>DCIP</option>
+                    <option value="IP Connect (IPC)">IPC</option>
+                    <option value="Ethernet Virtual Connection (EVC)">EVC</option>
+                    <option value="Business Access (BA)">BA</option>
+                </select>
+                </td>
+                <td class="feedback"></td>
+            </tr>
+
+            <tr>
+                <td class="data_class">Set Bandwidth:</td>
+                <td class="input"><input class="input" name="bw" id="bw" type="number" placeholder="100" min="1" max="1000" required onblur="checkbw()"></span></td>
+                <td class="feedback"><span class="feedback" id="messagebw">Max. bandwidth is 1000 Mbps</span></td>
+            </tr>
+
+            <tr>
+                <td class="data_class">Remote Device:</td>
+                <td> 
+                    <!--<input type="radio" name="rd" id="rd" value="Adtran" checked>Adtran-->
+                    <input type="radio" name="rd" id="rd" value="Elcon" checked>Elcon
+                    <input type="radio" name="rd" id="rd" value="Huawei">Huawei
+                </td>
+                <td class="feedback"></td>
+            </tr>
+
+            <tr>
+            <td class="data_class">Access Node:</td>
+            <td> 
+                <input type="radio" name="access" id="access" value="Adtran" checked>Adtran
+                <!--<input type="radio" name="access" id="access" value="Huawei">Huawei-->
+                <input type="radio" name="access" id="access" value="Nokia">Nokia
+            </td>
+            <td class="feedback"></td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td class="data_class2">🗓️ Due Date:</td>
+                <td class="input"><input class="input" name="date" id="date" type="date" required onblur="checkdate()"></td>
+                <td class="feedback"><span class="feedback" id="messagedate">Max. reservation is 3 days</span></td>
+            </tr>
+
+            <tr><td><br></td></tr> 
+
+            <tr> 
+                <td></td>           
+                <td class="data_class3" id="Button"><span class="button" onclick="booking();">Book Now</span></td>
+                <td></td>
+            </tr>
+
+            <tr><td><br></td></tr> 
+
+            <tr>
+                <td colspan="3"><span class="summary" id="bookingConfirm"></span></td>
+            </tr>
+
+                     
+        </table>  
+       
+        
+    </div>
+    </body>
+</html>

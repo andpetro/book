@@ -1,0 +1,74 @@
+table {
+    /*width: 750px;*/
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: "TeleGrotesk Next"
+}
+td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+#fullpage {
+    margin: 100px;
+}
+
+.summary {
+    font-family: "TeleGrotesk Next";
+    font-weight: bold;
+   
+}
+
+.button {
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.feedback {
+    font-family: "TeleGrotesk Next";
+    color: rgb(176, 176, 176);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table {
+    /*margin: 100px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    font-family: "TeleGrotesk Next";
+    text-align: left;
+    width: 150px; 
+    box-sizing: border-box;
+        
+}
+
+.data_class2 {
+    font-weight: bold;
+    font-family: "TeleGrotesk Next";
+    text-align: left;
+    /*text-align: center;
+    background-color: rgb(208, 208, 208);*/
+}
+
+.data_class3 {
+    font-weight: bold;
+    font-family: "TeleGrotesk Next";
+    text-align: center;
+}
+
+.data_class {
+    font-family: "TeleGrotesk Next";
+    text-align: center;
+}
+
+
+/*@font-face {
+    font-family: "TeleGrotesk Next";
+    src: url(http://fonts.cdnfonts.com/css/telegrotesk-next);
+}
