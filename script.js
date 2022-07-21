@@ -29,7 +29,7 @@ function checkname() {
     }
     else {
         document.getElementById("messagename").style.color = "red";
-        document.getElementById("messagename").innerHTML = " Please use only letters (max.10)";
+        document.getElementById("messagename").innerHTML = " Max. 10 symbols";
     }
 }
 
