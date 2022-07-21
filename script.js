@@ -35,7 +35,7 @@ function checkname() {
 
 function checkbw() {
     var bw = document.getElementById("bw").value;
-    if(bw >= 1000) {
+    if(bw > 1000) {
         document.getElementById("messagebw").style.color = "red";
         document.getElementById("messagebw").innerHTML = " Max. bandwidth is 1000 Mbps";
     }
